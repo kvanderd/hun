@@ -1,0 +1,10 @@
+<% if @url.errors.any? %>
+	 <%# render 'sharred/js_erorrs', target: @url  %>
+	 <% @url.errors.full_messages.each do |msg| %>
+      $('.errors').append('<p><%= escape_javascript( msg ) %></p>');
+    <% end %>
+<% else %>
+	// $("#new_url").closest('form').find("input[type=text], textarea").val("<%= @url.short %>");
+	$("#url_shortener_form").append("<%= escape_javascript link_to @url.short, url_path(@url.id) %>");
+	$("form").hide();
+<% end %>

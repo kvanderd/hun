@@ -1,0 +1,6 @@
+<div id="url_shortener_form">
+	<%= form_for @url, remote: true do |f| %>
+	  <%= f.text_field :long, placeholder: "your url", required: "required" %>
+	  <%= f.submit "shorten!", id: "new_url_button" %>
+	<% end %>
+</div>

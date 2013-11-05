@@ -1,0 +1,15 @@
+== Finish V1
+
+= show new url as a link (that can be clicked). -check
+
+
+
+====Tests
+== write tests for current features = (Long url in short url out, form disappears ,link shows, )
+
+===UI
+Design
+
+deploy
+= js redirect forced headers.
+complete. 

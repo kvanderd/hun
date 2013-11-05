@@ -1,0 +1,203 @@
+/*global*/
+
+body {
+	background-color: #F2CA52;
+	font-family: Arial;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 4%;
+	color: #D95204;
+	font-size: 5vw;
+}
+
+a {
+	font-size: 4vw;
+}
+
+img {
+	max-width: 100%;
+}
+
+#new_url_button {
+	max-width: 100%;
+	font-size: 1.2vw;
+	border: 2px solid #D95204;
+}
+
+#center_box {
+    width: 75%;
+    height: 50%;
+    background-color: #F38111;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+
+#url_shortener_form {
+	width: 75%;
+	height: 50%;
+	background-color: #D95204;
+
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+}
+
+#url_shortener_form form {
+	width: 50%;
+	position: absolute;
+	top:50;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#url_shortener_form form input {
+	height: 35%;
+	background-color: #F2CA52;
+	color: #D95204;
+	border: 2px solid #D95204;
+}
+
+#url_shortener_form a {
+	height: 15%;
+	width: 50%;
+	color: #F2CA52;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+}
+
+.errors {
+	text-align: center;
+  color: red;
+}
+
+.tossing{
+	animation-name: tossing;
+	-webkit-animation-name: tossing;	
+
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+	0% {
+		transform: rotate(-4deg);	
+	}
+	50% {
+		transform: rotate(4deg);
+	}
+	100% {
+		transform: rotate(-4deg);	
+	}						
+}
+
+@-webkit-keyframes tossing {
+	0% {
+		-webkit-transform: rotate(-4deg);	
+	}
+	50% {
+		-webkit-transform: rotate(4deg);
+	}
+	100% {
+		-webkit-transform: rotate(-4deg);	
+	}				
+}
+
+
+
+/*media queries */
+
+/*iphone or small*/
+@media  screen and (max-width: 650px) {
+  img {
+  	display: none;
+  }
+
+  #center_box {
+  	width: 100%;
+  }
+
+  #url_shortener_form  {
+   width: 100%;
+  }
+
+  #url_shortener_form form  {
+
+  }
+
+
+  form input {
+  	width: 100%;
+  }
+
+  #new_url_button {
+  	width: 100%;
+  	margin-top: 5%;
+  	font-size: 2.5vw;
+  	-webkit-user-select: none;
+  }
+}
+
+/*ipad or Medium*/
+
+@media screen and (max-width: 1024px) {
+	img {
+  	display: none;
+  }
+
+  h1 {
+  	padding-top: 5%;
+  }
+
+   #center_box {
+  	width: 100%;
+  }
+
+  #url_shortener_form  {
+   width: 100%;
+  }
+
+  #url_shortener_form form  {
+    margin-top: -1em;
+  }
+
+  form {
+  	width: 100%;
+  }
+
+  form input {
+  	width: 100%;
+  	margin-top: 2%;
+  }
+
+  #new_url_button {
+  	width: 100%;
+  	height: 75%;
+  }
+}
