@@ -129,6 +129,9 @@ img {
 	}				
 }
 
+#bee_container img {
+	padding-left: 1em;
+}
 
 
 /*media queries */
